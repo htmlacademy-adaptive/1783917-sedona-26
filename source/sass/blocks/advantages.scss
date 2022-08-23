@@ -1,0 +1,119 @@
+.advantage {
+  margin: 0;
+}
+
+.advantages__list {
+  background-color: #e7e5e5;
+  padding: 0;
+  padding-top: 38px;
+  list-style: none;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.advantages__list--town {
+  background-color: #ffffff;
+}
+
+.advantages__title {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.advantages__title--town {
+  text-align: left;
+}
+
+.advantages__title--blue {
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 11px;
+}
+
+.advantages__description {
+  font-family: $title;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.advantages__description--town {
+  text-align: left;
+}
+
+.advantages__description--blue {
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.advantages__description__number {
+  font-family: $title;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 28px;
+}
+
+.advantages__description__number--blue {
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 17px;
+}
+
+.advantages__item {
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__item--housing,
+.advantages__item--food,
+.advantages__item--gift {
+  color: #000000;
+}
+
+.advantages__real__town {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.sedona-bridge {
+  max-width: 320px;
+  margin: 0 auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.picture {
+  margin: 0;
+  width: 320px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.advantages__wrapper__list {
+  max-width: 320px;
+  margin: 0 auto;
+}
+

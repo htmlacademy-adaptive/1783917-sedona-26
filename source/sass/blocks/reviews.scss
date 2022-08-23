@@ -1,0 +1,58 @@
+.reviews__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.reviews__title {
+  padding: 0;
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.textarea {
+  background-color: $form;
+  width: 279px;
+  height: 150px;
+  border: none;
+  box-sizing: border-box;
+  margin-bottom: 56px;
+}
+
+.textarea-form .textarea {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(#000000, 0.3);
+  padding: 16px;
+}
+
+.reviews-button {
+  background-color: $accent;
+  border: none;
+}
+
+.textarea-form .reviews-button {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 18px 50px 13px 50px;
+  color: #ffffff;
+}
+
+.reviews__legend {
+  font-family: $title;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: right;
+  color: rgba(#333333, 0.6);
+  text-transform: uppercase;
+  margin: 0;
+}
