@@ -14,15 +14,6 @@
   text-transform: uppercase;
 }
 
-.textarea {
-  background-color: $form;
-  width: 279px;
-  height: 150px;
-  border: none;
-  box-sizing: border-box;
-  margin-bottom: 56px;
-}
-
 .textarea-form .textarea {
   font-family: $title;
   font-weight: 700;
@@ -35,15 +26,6 @@
 .reviews-button {
   background-color: $accent;
   border: none;
-}
-
-.textarea-form .reviews-button {
-  font-family: $title;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  padding: 18px 50px 13px 50px;
-  color: #ffffff;
 }
 
 .reviews__legend {

@@ -1,14 +1,3 @@
-
-// ЗАГОЛОВОК РАЗДЕЛОВ
-$title:"PT Sans Narrow", "Arial", sans-serif;
-
-// Акцентный голубой фон
-$accent: #81b3d2;
-
-//Светло-серый цвет в формах
-$form :#f2f2f2;
-
-
 @import "./blocks/main-header.scss";
 @import "./blocks/blue-background.scss";
 @import "./blocks/advantages.scss";
@@ -27,6 +16,22 @@ $form :#f2f2f2;
 @import "./blocks/photo.scss";
 @import "./blocks/video.scss";
 @import "./blocks/copyright.scss";
+@import "./blocks/social__list.scss";
+@import "./blocks/name.scss";
+@import "./blocks/index-container-wrapper.scss";
+@import "./blocks/contacts-form.scss";
+@import "./blocks/background-container-catalog.scss";
+@import "./blocks/main-picture-welcome-text.scss";
+@import "./blocks/container-wrapper.scss";
+@import "./blocks/site-list__link.scss";
+@import "./blocks/pic.scss";
+@import "./blocks/photo-name.scss";
+@import "./blocks/control__label.scss";
+@import "./blocks/textarea.scss";
+@import "./blocks/textarea-form.scss";
+@import "./blocks/button-search.scss";
+@import "./blocks/field.scss";
+@import "./blocks/form-field.scss";
 
 body {
   //background-color: rgb(235, 25, 190); //
