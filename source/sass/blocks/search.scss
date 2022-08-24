@@ -1,0 +1,36 @@
+.search {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 49px;
+}
+
+.search__title {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 31px;
+}
+
+.search__description {
+  font-family: $title;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 38px;
+}
+
+.search__wrapper {
+  padding: 0 18px;
+}

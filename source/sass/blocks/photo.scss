@@ -1,0 +1,27 @@
+.photo__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 24px 20px 0 20px;
+  box-sizing: border-box;
+}
+
+.photo__card__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+.photo__catalog__title {
+  margin: 0;
+  padding: 0;
+  font-family: $title;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.photo__catalog {
+  text-align: center;
+}

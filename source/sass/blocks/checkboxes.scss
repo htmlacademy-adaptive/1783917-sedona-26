@@ -1,0 +1,24 @@
+.checkboxes {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.checkboxes__title {
+  margin: 0;
+  padding: 0;
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.checkboxes__group {
+  border: none;
+}
+
+.checkboxes__list {
+  list-style: none;
+}

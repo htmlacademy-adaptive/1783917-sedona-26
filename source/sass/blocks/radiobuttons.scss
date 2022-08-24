@@ -1,0 +1,29 @@
+.radiobuttons {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  outline-style: none;
+}
+
+.radiobuttons__list {
+  list-style: none;
+}
+
+.radiobuttons__title {
+  margin: 0;
+  padding: 0;
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.radiobuttons__group {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+}

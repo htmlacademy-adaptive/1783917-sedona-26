@@ -1,0 +1,53 @@
+.intro {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 36px;
+}
+
+.intro__header {
+  padding: 0 30px 0 30px;
+}
+
+.intro__header--form {
+  margin: 0;
+  padding: 0;
+}
+
+.intro__header--catalog {
+  padding: 0 20px 0 20px;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.intro__slogan {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 35px;
+  margin: 0;
+}
+
+.intro__desription {
+  font-family: $title;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  padding-bottom: 35px;
+  margin: 0;
+}

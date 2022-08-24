@@ -1,0 +1,40 @@
+.reviews__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.reviews__title {
+  padding: 0;
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.textarea-form .textarea {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(#000000, 0.3);
+  padding: 16px;
+}
+
+.reviews-button {
+  background-color: $accent;
+  border: none;
+}
+
+.reviews__legend {
+  font-family: $title;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: right;
+  color: rgba(#333333, 0.6);
+  text-transform: uppercase;
+  margin: 0;
+}

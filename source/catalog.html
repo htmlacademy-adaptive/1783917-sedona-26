@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -21,17 +22,17 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a class="site-list__link" href="photo.html">
               Фото и видео
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Форма отзыва
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="#">
               HTML ACADEMY
             </a>
           </li>
@@ -45,13 +46,15 @@
 
   </header>
   <main class="main-container">
-    <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+    <div class="background-container-catalog">
+    <h1 class="visually-hidden" hidden>Добро пожаловать в Седону</h1>
     <div class="container-wrapper">
       <img class="sedona-logotype-form" src="img/sedona-logo-form.svg" width="229" height="39" alt="Sedona logotype.">
+    </div>
 
     </div>
     <section class="intro">
-      <header class="intro__header">
+      <header class="intro__header intro__header--catalog">
         <h2 class="intro__title">
           Фото и видео
         </h2>
@@ -70,37 +73,37 @@
             <h2 class="photo__catalog__title">
               Неродные просторы
             </h2>
-            <p>Автор фото: Борис</p>
+            <p class="photo-name">Автор фото: Борис</p>
             <span>1350</span>
           </li>
 
           <li class="photo__card__item">
-            <img class="photo__catalog" src="img/photo-2-mobile.jpg" alt="Дорога и вид на горы перед закатом в Седоне."
+            <img class="photo__catalog" src="img/photo-2-mobile.jpg" alt="Местная растительность в Седоне."
               width="280" height="280">
             <h2 class="photo__catalog__title">
               Местная растительность
             </h2>
-            <p>Автор фото: Сергей</p>
+            <p class="photo-name">Автор фото: Сергей</p>
             <span>143</span>
           </li>
 
           <li class="photo__card__item">
-            <img class="photo__catalog" src="img/photo-3-mobile.jpg" alt="Дорога и вид на горы перед закатом в Седоне."
+            <img class="photo__catalog" src="img/photo-3-mobile.jpg" alt="Извилистная горная дорога в Седоне."
               width="280" height="280">
             <h2 class="photo__catalog__title">
               Дорога на север
             </h2>
-            <p>Автор фото: Петр</p>
+            <p class="photo-name">Автор фото: Петр</p>
             <span>96</span>
           </li>
 
           <li class="photo__card__item">
-            <img class="photo__catalog" src="img/photo-4-mobile.jpg" alt="Дорога и вид на горы перед закатом в Седоне."
-              width="280" height="280">
+            <img class="photo__catalog" src="img/photo-4-mobile.jpg" alt="Пейзаж с видом на красные горы и Мост дьявола в Седоне."
+            width="280" height="280">
             <h2 class="photo__catalog__title">
               Мост дьявола
             </h2>
-            <p>Автор фото: Антон</p>
+            <p class="photo-name">Автор фото: Антон</p>
             <span>254</span>
           </li>
         </ul>
