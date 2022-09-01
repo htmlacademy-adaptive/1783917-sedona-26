@@ -1,8 +1,19 @@
 .photo__wrapper {
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding: 24px 20px 0 20px;
-  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__wrapper {
+    width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__wrapper {
+    width: 1200px;
+  }
 }
 
 .photo__card__list {
@@ -10,6 +21,8 @@
   padding: 0;
   list-style: none;
   padding-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .photo__catalog__title {
@@ -22,6 +35,89 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $desktop-width) {
+  .photo__catalog__title {
+    color: #ffffff;
+    margin-top: -77px;
+  }
+}
+
 .photo__catalog {
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__catalog {
+    width: 648px;
+    height: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__catalog {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+  }
+}
+
+.photo__catalog--2 {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__catalog--2 {
+    width: 324px;
+    height: 267px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__catalog--2 {
+    width: 400px;
+    height: 267px;
+    margin: 0 auto;
+  }
+}
+
+.photo__catalog--3 {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__catalog--3 {
+    width: 324px;
+    height: 267px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__catalog--3 {
+    width: 400px;
+    height: 267px;
+    margin: 0 auto;
+  }
+}
+
+.photo__catalog--4 {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__catalog--4 {
+    width: 324px;
+    height: 267px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__catalog--4 {
+    width: 400px;
+    height: 267px;
+    margin: 0 auto;
+  }
 }

@@ -7,3 +7,9 @@
   font-size: 14px;
   line-height: 21px;
 }
+
+@media (min-width: $desktop-width) {
+  .photo-name {
+    color: #ffffff;
+  }
+}

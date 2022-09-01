@@ -2,7 +2,23 @@
   background-image: url("../img/index-background.jpg");
   background-color: #3f5e72;
   background-repeat: no-repeat;
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
   background-position: bottom right;
+}
+
+@media (min-width: $tablet-width) {
+  .background-container-catalog {
+    background-image: url("../img/back-tablet-catalog-form.jpg.jpg");
+    width: 768px;
+    height: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .background-container-catalog {
+    background-image: url("../img/back-desktop-catalog-form.jpg.jpg");
+    width: 1200px;
+    height: 303px;
+  }
 }
