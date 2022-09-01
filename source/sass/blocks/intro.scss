@@ -1,11 +1,26 @@
 .intro {
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding-top: 36px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    width: 484px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    width: 484px;
+    margin: 0 auto;
+  }
 }
 
 .intro__header {
-  padding: 0 30px 0 30px;
+  margin: 0 auto;
 }
 
 .intro__header--form {
@@ -15,6 +30,27 @@
 
 .intro__header--catalog {
   padding: 0 20px 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__header--catalog {
+    height: 250px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__header--catalog {
+    margin: 0;
+    padding: 0;
+    font-family: $title;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+  }
 }
 
 .intro__title {
@@ -29,6 +65,34 @@
   padding-bottom: 35px;
 }
 
+@media (min-width: $tablet-width) {
+  .intro__title {
+    margin: 0;
+    padding: 0;
+    font-family: $title;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__title {
+    margin: 0;
+    padding: 0;
+    font-family: $title;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
 .intro__slogan {
   font-family: $title;
   font-weight: 700;
@@ -36,8 +100,9 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 35px;
   margin: 0;
+  padding: 0 13px;
+  padding-bottom: 35px;
 }
 
 .intro__desription {
@@ -50,4 +115,51 @@
   padding: 0;
   padding-bottom: 35px;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__desription {
+    font-family: $title;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 35px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__desription {
+    font-family: $title;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 35px;
+    margin: 0;
+  }
+}
+
+.intro__desription--catalog {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__desription {
+    width: 428px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__desription {
+    width: 428px;
+    margin: 0 auto;
+  }
 }

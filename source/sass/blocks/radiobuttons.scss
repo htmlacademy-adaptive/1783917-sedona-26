@@ -1,13 +1,48 @@
 .radiobuttons {
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding: 0;
   border: none;
   outline-style: none;
 }
 
+@media (min-width: $tablet-width) {
+  .radiobuttons {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radiobuttons {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 .radiobuttons__list {
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .radiobuttons__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 576px;
+    height: 162px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radiobuttons__list {
+    display: flex;
+    justify-content: space-between;
+    width: 854px;
+    height: 134px;
+    margin: 0 auto;
+  }
 }
 
 .radiobuttons__title {
@@ -26,4 +61,28 @@
   margin: 0;
   padding: 0;
   padding-top: 24px;
+}
+
+.radiobuttons__wrapper {
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .radiobuttons__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 648px;
+    //height: 162px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radiobuttons__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 854px;
+    //height: 134px;
+    margin: 0 auto;
+  }
 }
