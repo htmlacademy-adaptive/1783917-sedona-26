@@ -28,7 +28,7 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
-    padding: 30px 60px;
+    padding: 20px 60px;
     display: flex;
     justify-content: space-between;
     width: 768px;
@@ -40,12 +40,12 @@
 
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
-    padding: 30px 60px;
+    padding: 20px 117px;
     display: flex;
     justify-content: space-between;
-    width: 976px;
+    width: 1200px;
     height: 120px;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
   }
 }
@@ -61,4 +61,65 @@
   padding: 0;
   padding-bottom: 34px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__title {
+    padding-top: 26px;
+  }
+}
+
+.main-footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 95px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 15px;
+    width: 145px;
+  }
+}
+
+.main-footer__social {
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.copyright__link {
+  display: block;
+  color: #000000;
+  padding-top: 8px;
+  padding-left: 3px;
+}
+
+/*CТИЛИ ПРИ НАВЕДЕНИИ -HOVER*/
+.copyright__link:hover {
+  color: rgb(129, 179, 210);
+}
+
+.main-footer__copyright:hover {
+  color: rgb(129, 179, 210);
+}
+
+.main-footer__copyright:hover svg {
+  color: rgb(129, 179, 210);
+}
+
+/*CТИЛИ ПРИ КЛИКЕ -COPYRIGHT*/
+.main-footer__copyright:active svg {
+  color: rgb(179, 179, 179);
+}
+
+.main-footer__copyright:active {
+  color: rgb(179, 179, 179);
 }

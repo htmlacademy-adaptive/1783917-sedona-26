@@ -1,23 +1,62 @@
 .index-container-wrapper {
-  padding: 90px 19px 85px 19px;
   width: 320px;
   box-sizing: border-box;
+
+  &::after {
+    display: block;
+    content: "";
+    background-image: url("../img/intro-triangle-top-decorative-part.svg");
+    width: 320px;
+    height: 57px;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .index-container-wrapper {
-    width: 461px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    height: 518px;
+    width: 768px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: " ";
+      background-image: url("../img/intro-triangle.svg");
+      width: 768px;
+      height: 57px;
+      margin: 0;
+      top: 473px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .index-container-wrapper {
-    width: 461px;
-    margin: 0 auto;
-    height: 518px;
-    box-sizing: border-box;
+    width: 1200px;
+
+    &::after {
+      position: absolute;
+      content: " ";
+      background-image: url("../img/intro-triangle-desktop.svg");
+      width: 1200px;
+      height: 57px;
+      margin: 0;
+      top: 475px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-position: bottom;
+      background-repeat: no-repeat;
+    }
   }
 }

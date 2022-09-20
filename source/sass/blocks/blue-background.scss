@@ -4,7 +4,7 @@
   width: 320px;
   height: 211px;
   margin: 0 auto;
-  padding: 35px 22px 35px 22px;
+  padding: 56px 22px 35px 22px;
   box-sizing: border-box;
 }
 
@@ -21,5 +21,25 @@
     width: 400px;
     height: 256px;
     padding: 47px 52px 56px 52px;
+  }
+}
+
+.blue-background--sedona-bridge {
+  padding: 41px 22px 35px 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .blue-background--sedona-bridge {
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .blue-background--sedona-bridge {
+    padding: 50px 82px 10px 82px;
+
+    br {
+      display: none;
+    }
   }
 }

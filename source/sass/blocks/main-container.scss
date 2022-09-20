@@ -3,16 +3,19 @@
   background-color: #3f5e72;
   background-repeat: no-repeat;
   width: 320px;
-  margin: 0 auto;
+  margin: 15px auto;
   background-size: 100%;
+  margin-bottom: 1px;
 }
 
 @media (min-width: $tablet-width) {
   .background-container {
     background-image: url("../img/index-tablet-background.jpg");
     width: 768px;
-    margin: 0 auto;
-    height: 518px;
+    margin: 42px auto;
+    height: 529px;
+    background-position: bottom;
+    margin-bottom: 11px;
   }
 }
 
@@ -20,8 +23,10 @@
   .background-container {
     background-image: url("../img/index-tablet-background.jpg");
     width: 1200px;
-    margin: 0 auto;
-    height: 518px;
+    margin: 42px auto;
+    height: 532px;
     background-size: cover;
+    background-position-y: 10px;
+    margin-bottom: -32px;
   }
 }

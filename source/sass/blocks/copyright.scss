@@ -1,7 +1,16 @@
 .copyright__text {
-  font-family: $title;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    padding: 15px 1px 15px 17px;
+  }
 }
