@@ -1,11 +1,23 @@
 .advantages {
-  margin: 0;
+  margin: -35px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    margin: -12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin-top: 8px;
+  }
 }
 
 .advantages__list {
-  background-color: #e7e5e5;
+  background-color: rgb(238, 238, 238);
   padding: 0;
-  padding-top: 38px;
+  padding-top: 34px;
   list-style: none;
   width: 320px;
   margin: 0 auto;
@@ -14,6 +26,8 @@
 .advantages__list--town {
   background-color: #ffffff;
   width: 320px;
+  padding-bottom: 52px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,9 +35,9 @@
     width: 768px;
     display: flex;
     justify-content: space-around;
-    padding-top: 158px;
     box-sizing: border-box;
     height: 329px;
+    padding: 0;
   }
 }
 
@@ -32,6 +46,8 @@
     width: 1200px;
     display: flex;
     justify-content: space-around;
+    height: 330px;
+    padding: 0;
   }
 }
 
@@ -46,6 +62,19 @@
   padding: 0;
   margin: 0;
   padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-family: $title;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 16px;
+  }
 }
 
 .advantages__title--town {
@@ -55,6 +84,7 @@
 @media (min-width: $tablet-width) {
   .advantages__title--town {
     text-align: center;
+    padding-bottom: 23px;
   }
 }
 
@@ -73,14 +103,14 @@
 
 @media (min-width: $tablet-width) {
   .advantages__title--blue {
-    padding: 0 20px;
+    padding: 0 31px;
     padding-bottom: 11px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__title--blue {
-    padding: 0 20px;
+    padding: 0 43px;
     padding-bottom: 11px;
   }
 }
@@ -95,22 +125,78 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.advantages__title--bridge {
+  padding-bottom: 8px;
+
+  br {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title--bridge {
+    padding: 6px 23px 12px 23px;
+
+    @media (min-width: $desktop-width) {
+      br {
+        display: block;
+      }
+    }
+  }
+}
+
+.advantages__description--bridge {
+  border-bottom: 1px solid rgba(214, 214, 214, 1);
+}
+
+.advantages__description--grand {
+  border-bottom: none;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__description--bridge {
+    padding: 4px 5px;
+    border-bottom: none;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__description--bridge {
+    border-bottom: none;
+  }
+}
+
+.advantages__description--road {
+  @media (min-width: $tablet-width) {
+    padding: 4px 23px;
+  }
 }
 
 .advantages__description--town {
   text-align: left;
+  padding-bottom: 29px;
+  padding-right: 19px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages__description--town {
     text-align: center;
-  }
-}
+    padding: 0 20px;
 
-@media (min-width: $desktop-width) {
-  .advantages__description--town {
-    text-align: center;
+    br {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
   }
 }
 
@@ -119,6 +205,12 @@
   padding: 0;
   margin: 0;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .advantages__description__number {
@@ -138,6 +230,10 @@
   padding: 0;
   margin: 0;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 24px;
+  }
 }
 
 .advantages__item {
@@ -148,7 +244,6 @@
 @media (min-width: $tablet-width) {
   .advantages__item {
     width: 189px;
-    margin: 0 auto;
   }
 }
 
@@ -159,11 +254,182 @@
   }
 }
 
+.advantages__item--bridge:nth-child(1) {
+  padding-bottom: 28px;
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 51px 14px 55px;
+    box-sizing: border-box;
+    width: 400px;
+  }
+}
+
+.advantages__item--bridge:nth-child(2) {
+  padding-bottom: 31px;
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 45px 14px 44px;
+    box-sizing: border-box;
+  }
+}
+
+.advantages__item--bridge:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    padding: 35px 45px 14px 44px;
+    box-sizing: border-box;
+  }
+}
+
+.advantages__description__number--bridge {
+  padding-bottom: 20px;
+}
+
 .advantages__item--housing,
-.advantages__item--food,
+.advantages__item--food {
+  color: #000000;
+  width: 256px;
+  margin: 0;
+  padding-left: 63px;
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    padding: 158px 23px 83px 25px;
+    box-sizing: border-box;
+  }
+}
+
 .advantages__item--gift {
   color: #000000;
   width: 256px;
+  margin: 0;
+  padding-left: 63px;
+
+  @media (min-width: $tablet-width) {
+    padding: 158px 17px 70px 23px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.advantages__item--food {
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding: 157px 32px 63px 33px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    padding: 158px 56px 83px 57px;
+    box-sizing: border-box;
+  }
+}
+
+.advantages__item--housing {
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    height: 330px;
+    padding: 158px 20px 62px 22px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item--housing {
+    width: 400px;
+    padding: 160px 22px 83px 21px;
+    height: 330px;
+    box-sizing: border-box;
+  }
+}
+
+.advantages__description--housing {
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0 28px;
+    }
+  }
+}
+
+.advantages__description--gift {
+  padding: 0;
+  padding-right: 60px;
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 30px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__description--gift {
+    padding: 0 12px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__description--gift {
+    padding: 0;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+//ЦВЕТНЫЕ ИКОНКИ ДЛЯ ПРЕИМУЩЕСТВ
+.advantages__item--housing::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/house.svg");
+  width: 69%;
+  height: 78px;
+  margin: -30px -8px;
+  left: -66px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.advantages__item--food::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/burger.svg");
+  width: 69%;
+  height: 78px;
+  margin: -30px -8px;
+  left: -65px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.advantages__item--gift::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/present.svg");
+  width: 69%;
+  height: 78px;
+  margin: -30px -8px;
+  left: -66px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
 }
 
 .advantages__real__town {
@@ -172,9 +438,13 @@
 }
 
 .sedona-bridge {
-  margin: 0 auto;
+  margin: -20px auto;
   height: 100%;
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .picture {
@@ -188,6 +458,7 @@
   .picture {
     width: 512px;
     height: 256px;
+    display: block;
   }
 }
 
@@ -244,6 +515,9 @@
 
 .advantages__list--bridge {
   width: 320px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding: 33px 14px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -251,7 +525,10 @@
     display: flex;
     justify-content: space-between;
     width: 768px;
+    padding: 34px 36px;
+    box-sizing: border-box;
     margin: 0 auto;
+    padding-bottom: 7px;
   }
 }
 
@@ -259,5 +536,15 @@
   .advantages__list--bridge {
     display: flex;
     width: 1200px;
+    padding: 0;
+    height: 256px;
+  }
+}
+
+.advantages__wrapper__bridge {
+  height: 503px;
+
+  @media (min-width: $tablet-width) {
+    height: 242px;
   }
 }

@@ -4,18 +4,31 @@
   padding: 0;
   border: none;
   outline-style: none;
+  height: 238px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 26px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
   .radiobuttons {
     width: 768px;
+    border-bottom: none;
+    height: 198px;
+    margin: 0 auto;
+    padding: 15px 25px 9px;
+    box-sizing: border-box;
+    position: relative;
   }
 }
 
 @media (min-width: $desktop-width) {
   .radiobuttons {
     width: 1200px;
-    margin: 0 auto;
+    border-bottom: none;
+    padding: 15px 169px 9px;
+    box-sizing: border-box;
+    height: 179px;
   }
 }
 
@@ -29,9 +42,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 576px;
-    height: 162px;
+    height: 124px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 3px 00 56px;
+    box-sizing: border-box;
   }
 }
 
@@ -39,9 +53,12 @@
   .radiobuttons__list {
     display: flex;
     justify-content: space-between;
-    width: 854px;
-    height: 134px;
+    flex-wrap: wrap;
+    width: 856px;
+    height: 124px;
     margin: 0 auto;
+    padding: 0 3px 0 17px;
+    box-sizing: border-box;
   }
 }
 
@@ -54,6 +71,39 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: -10px;
+}
+
+@media (min-width: $tablet-width) {
+  .radiobuttons__title {
+    margin: 0;
+    padding: 0;
+    font-family: $title;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 13px;
+    padding-left: 71px;
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radiobuttons__title {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-left: 0;
+    position: relative;
+  }
 }
 
 .radiobuttons__group {
@@ -65,6 +115,7 @@
 
 .radiobuttons__wrapper {
   width: 320px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -72,7 +123,6 @@
     display: flex;
     justify-content: space-between;
     width: 648px;
-    //height: 162px;
     margin: 0 auto;
   }
 }
@@ -82,7 +132,24 @@
     display: flex;
     justify-content: space-between;
     width: 854px;
-    //height: 134px;
     margin: 0 auto;
+  }
+}
+
+.radiobuttons__item {
+  padding-bottom: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .radiobuttons__item {
+    margin-bottom: 16px;
+    padding: 0;
+    height: 31px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 16px;
+      padding: 0;
+      height: 31px;
+    }
   }
 }

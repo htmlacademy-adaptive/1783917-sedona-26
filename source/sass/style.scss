@@ -26,10 +26,10 @@
 @import "./blocks/background-container-catalog.scss";
 @import "./blocks/main-picture-welcome-text.scss";
 @import "./blocks/container-wrapper.scss";
-@import "./blocks/site-list__link.scss";
+@import "./blocks/site-list.scss";
 @import "./blocks/pic.scss";
 @import "./blocks/photo-name.scss";
-@import "./blocks/control__label.scss";
+@import "./blocks/control.scss";
 @import "./blocks/textarea.scss";
 @import "./blocks/textarea-form.scss";
 @import "./blocks/button-search.scss";
@@ -37,10 +37,9 @@
 @import "./blocks/form-field.scss";
 @import "./blocks/form-contacts.scss";
 
-
 body {
   //background-color: rgb(235, 25, 190); //
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   padding: 0;
   margin: 0;
   list-style-type: none;

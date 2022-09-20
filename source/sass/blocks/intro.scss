@@ -1,14 +1,31 @@
 .intro {
   width: 320px;
   margin: 0 auto;
-  padding-top: 36px;
   box-sizing: border-box;
+  padding-top: 32px;
+  margin-bottom: 32px;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url("../img/intro-triangle-bottom-decorative-part.svg");
+    width: 100%;
+    height: 37px;
+    margin: -20px 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .intro {
     width: 484px;
-    margin: 0 auto;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -16,6 +33,34 @@
   .intro {
     width: 484px;
     margin: 0 auto;
+    margin-top: 51px;
+  }
+}
+
+.intro .intro--catalog {
+  ::after {
+    display: none;
+  }
+}
+
+.intro--catalog {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 190px;
+  padding-top: 25px;
+
+  ::after {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro--catalog {
+    width: 458px;
+    box-sizing: border-box;
+    height: 190px;
+    padding: 25px 8px;
   }
 }
 
@@ -101,18 +146,32 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding: 0 13px;
+  padding: 0 31px;
   padding-bottom: 35px;
 }
 
+@media (min-width: $tablet-width) {
+  .intro__slogan {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 9px 23px;
+    padding-bottom: 27px;
+  }
+}
+
 .intro__desription {
-  font-family: $title;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  padding: 0;
+  padding: 0 10px;
   padding-bottom: 35px;
   margin: 0;
 }
@@ -148,18 +207,156 @@
 .intro__desription--catalog {
   width: 280px;
   margin: 0 auto;
+  padding: 1px 3px 17px 1px;
+
+  ::after {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .intro__desription {
-    width: 428px;
-    margin: 0 auto;
+    width: 484px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro__desription {
-    width: 428px;
+    width: 484px;
+    margin: 0;
+  }
+}
+
+.intro__title--catalog {
+  padding: 13px 3px 24px 2px;
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 3px 29px 2px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro__desription {
+    width: 484px;
+    box-sizing: border-box;
+    padding: 5px 18px 10px 40px;
+    margin-left: -51px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0 49px 10px 6px;
+      margin: 0;
+    }
+  }
+}
+
+.intro--form {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 39px;
+  height: 198px;
+  padding-bottom: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro--form {
+    margin-bottom: -2px;
+    padding-top: 0;
+    padding-bottom: 111px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: -97px;
+      padding-top: 0;
+      padding-bottom: 7px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro__desription--index {
+    width: 520px;
+    box-sizing: border-box;
     margin: 0 auto;
+    padding: 0 0 33px;
+    margin-left: -15px;
+
+    @media (min-width: $desktop-width) {
+      width: 520px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 0 0 33px;
+      margin-left: -19px;
+    }
+  }
+}
+
+.intro__title--form {
+  padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 27px;
+  }
+}
+
+.intro--form::after {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__desription--form {
+    width: 484px;
+    box-sizing: border-box;
+    padding: 0 21px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro--form {
+    ::before {
+      position: absolute;
+      right: 35px;
+      top: 594px;
+      left: -84px;
+      height: 1px;
+      width: 129px;
+      background-color: rgb(219, 219, 219);
+      content: "";
+
+      @media (min-width: $desktop-width) {
+        position: absolute;
+        right: 45px;
+        top: 573px;
+        left: -238px;
+        height: 1px;
+        width: 281px;
+        background-color: #dbdbdb;
+        content: "";
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro--form ::after {
+    position: absolute;
+    right: 35px;
+    top: 594px;
+    left: 440px;
+    height: 1px;
+    width: 129px;
+    background-color: #dbdbdb;
+    content: "";
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      right: 35px;
+      top: 573px;
+      left: 440px;
+      height: 1px;
+      width: 281px;
+      background-color: #dbdbdb;
+      content: "";
+    }
   }
 }

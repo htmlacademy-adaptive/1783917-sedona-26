@@ -1,5 +1,76 @@
 .social__list {
-  margin: 0;
-  padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 81px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 5px;
+    width: 156px;
+  }
+}
+
+.social__link {
+  display: block;
+  color: #ffffff;
+}
+
+.social__item {
+  width: 48px;
+  height: 48px;
+  margin-right: 0;
+  position: relative;
+  background-color: $accent;
+  padding: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    background-color: #81b3d2;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+}
+
+.social__item:hover {
+  width: 48px;
+  height: 48px;
+  margin-right: 0;
+  position: relative;
+  background-color: rgb(102, 158, 192);
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.social__item:active {
+  width: 48px;
+  height: 48px;
+  margin-right: 0;
+  position: relative;
+  background-color: rgb(84, 150, 189);
+  padding: 12px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.social__item:active .youtube {
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.social__item:active .telegram {
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.social__item:active .vkontakte {
+  color: rgb(255, 255, 255, 0.3);
 }
